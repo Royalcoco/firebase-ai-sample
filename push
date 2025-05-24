@@ -1,0 +1,102 @@
+// APP WINDOWS POUR LANCER UNE INTERFACE NO-CODE PAR IP
+// Ce script batch crée un lien direct entre un client Windows (éditeur de texte) et un backend Node.js pour push automatique + interface multitâche
+
+@echo off
+setlocal ENABLEDELAYEDEXPANSION
+
+:: Configuration
+set "NODE_PATH=node"
+set "SERVER_HOST=localhost"
+set "SERVER_PORT=3000"
+set "TOKEN=token-client-123"
+set "CLIENT_ID=client-%RANDOM%"
+set "PUSH_FILE=push_client_input.txt"
+
+:: Création du fichier input si inexistant
+if not exist %PUSH_FILE% (
+    echo Entrez votre texte ici pour push. Sauvegardez pour déclencher. > %PUSH_FILE%
+)
+
+:: Ouvre dans éditeur de texte par défaut
+start notepad %PUSH_FILE%
+
+:: Lancement d'un watcher PowerShell pour surveiller les modifications
+powershell -Command "
+$prev = Get-Content '%PUSH_FILE%' -Raw
+while ($true) {
+  Start-Sleep -Seconds 3
+  $current = Get-Content '%PUSH_FILE%' -Raw
+  if ($prev -ne $current) {
+    $prev = $current
+    $json = @{ 
+      content = $current; 
+      timestamp = [DateTimeOffset]::Now.ToUnixTimeMilliseconds(); 
+      multitask = 'auto';
+      status = 'pending';
+      host = $env:COMPUTERNAME
+    } | ConvertTo-Json -Depth 3
+    Invoke-WebRequest -Uri http://%SERVER_HOST%:%SERVER_PORT%/push-client -Method POST -Body $json -ContentType 'application/json'
+  }
+}"
+
+exit
+
+/* BACKEND (Node.js: Ajout d'un endpoint spécial pour les pushes directs Windows + interface multitâche + tableau de bord + lecture réseau local) */
+const tasks = [];
+
+app.post('/push-client', (req, res) => {
+  const clientIp = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  const data = req.body;
+  const timestamp = Date.now();
+  const filename = `deep-no-code-${clientIp.replace(/[:.]/g, '_')}-${timestamp}.json`;
+  const filepath = path.join(pushDir, filename);
+
+  // Simulation de lecture proxy périphérique (-1 bit comme indicateur d'entrée brute)
+  const proxyBitInput = Buffer.from(data.content).length % 2 === 0 ? 1 : -1;
+
+  const multitaskData = {
+    ...data,
+    multitask: true,
+    ip: clientIp,
+    host: data.host || 'unknown-host',
+    bitSignal: proxyBitInput,
+    taskId: `task-${timestamp}`,
+    serverProcessedAt: new Date().toISOString()
+  };
+
+  fs.writeFileSync(filepath, JSON.stringify(multitaskData, null, 2));
+  tasks.push(multitaskData);
+
+  console.log(`[MULTITASK] Tâche reçue de ${clientIp} (${multitaskData.host}) avec bit signal ${proxyBitInput}`);
+  res.send({ message: 'Tâche enregistrée avec lecture périphérique', file: filename });
+});
+
+// ROUTE POUR TABLEAU DE BORD VISUEL DES TÂCHES
+app.get('/dashboard', (req, res) => {
+  res.send(`
+    <html>
+    <head>
+      <title>Dashboard No-Code</title>
+      <style>
+        body { font-family: sans-serif; padding: 20px; background: #f5f5f5; }
+        .task { background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+        .task-header { font-weight: bold; }
+        textarea { width: 100%; height: 100px; }
+        .status { color: green; font-weight: bold; }
+      </style>
+    </head>
+    <body>
+    <h1>Tableau de bord des tâches utilisateurs</h1>
+    ${tasks.map(t => `
+      <div class='task'>
+        <div class='task-header'>${t.taskId} — ${t.ip} (${t.host})</div>
+        <div><span class='status'>${t.status}</span> — Bit Signal: ${t.bitSignal} — ${new Date(t.timestamp).toLocaleString()}</div>
+        <textarea readonly>${t.content}</textarea>
+      </div>
+    `).join('')}
+    <script>
+      setTimeout(() => { window.location.reload(); }, 5000);
+    </script>
+    </body></html>
+  `);
+});
