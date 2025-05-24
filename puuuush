@@ -1,0 +1,34 @@
+const puppeteer = require("puppeteer");
+
+async function detectNewElements(url, lastKnownTags = []) {
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+  await page.goto(url);
+
+  const newElements = await page.evaluate((knownTags) => {
+    const allTags = [...document.querySelectorAll('*')].map(e => e.tagName.toLowerCase());
+    const uniqueTags = [...new Set(allTags)];
+    return uniqueTags.filter(tag => !knownTags.includes(tag));
+  }, lastKnownTags);
+
+  await browser.close();
+  return newElements;
+}
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://exemple.com"
+html = requests.get(url).text
+soup = BeautifulSoup(html, "html.parser")
+unique_tags = set(tag.name for tag in soup.find_all())
+
+json_data = {
+    "source": url,
+    "new_tags": list(unique_tags)
+}
+
+requests.post("http://localhost:3000/push-client", json=json_data)
+function predictImportance(tag) {
+  const importantTags = ['script', 'form', 'input', 'canvas', 'iframe'];
+  return importantTags.includes(tag) ? 'haute' : 'basse';
+}
