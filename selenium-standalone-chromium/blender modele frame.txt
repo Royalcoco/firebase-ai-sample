@@ -1,0 +1,63 @@
+import bpy
+
+# Configuration de la scène
+bpy.context.scene.frame_start = 1
+bpy.context.scene.frame_end = 16500  # 11 minutes à 25 fps
+fps = 25
+
+# Fonction pour créer une animation d'assemblage et de désassemblage
+def create_animation(obj, start_frame, end_frame, direction="assemble"):
+    bpy.context.view_layer.objects.active = obj
+    bpy.ops.object.select_all(action='DESELECT')
+    obj.select_set(True)
+    
+    if direction == "assemble":
+        obj.location = (0, 0, -5)  # Commence en dessous
+        obj.keyframe_insert(data_path="location", frame=start_frame)
+        obj.location = (0, 0, 0)  # Se déplace vers la position d'origine
+        obj.keyframe_insert(data_path="location", frame=end_frame)
+    elif direction == "disassemble":
+        obj.location = (0, 0, 0)  # Commence à la position d'origine
+        obj.keyframe_insert(data_path="location", frame=start_frame)
+        obj.location = (0, 0, -5)  # Se déplace en dessous
+        obj.keyframe_insert(data_path="location", frame=end_frame)
+
+# Assigner les objets pour l'animation
+objects = bpy.data.objects  # Vous pouvez ajuster cette ligne pour sélectionner des objets spécifiques
+
+# Temps pour chaque séquence
+time_per_section = (bpy.context.scene.frame_end - bpy.context.scene.frame_start) // len(objects)
+
+# Animation d'assemblage et de désassemblage pour chaque objet
+for i, obj in enumerate(objects):
+    if obj.type == 'MESH':  # Seulement pour les objets mesh
+        start_frame = i * time_per_section + 1
+        mid_frame = start_frame + time_per_section // 2
+        end_frame = (i + 1) * time_per_section
+
+        # Animation d'assemblage
+        create_animation(obj, start_frame, mid_frame, "assemble")
+
+        # Animation de désassemblage
+        create_animation(obj, mid_frame, end_frame, "disassemble")
+
+# Configuration de la caméra
+camera = bpy.data.objects['Camera']
+camera.location = (7, -7, 7)
+camera.rotation_euler = (1.1, 0, 0.8)
+camera.keyframe_insert(data_path="location", frame=1)
+camera.keyframe_insert(data_path="rotation_euler", frame=1)
+
+# Configuration du rendu
+bpy.context.scene.render.image_settings.file_format = 'FFMPEG'
+bpy.context.scene.render.ffmpeg.format = 'MPEG4'
+bpy.context.scene.render.ffmpeg.codec = 'H264'
+bpy.context.scene.render.ffmpeg.constant_rate_factor = 'HIGH'
+bpy.context.scene.render.ffmpeg.ffmpeg_preset = 'BEST'
+bpy.context.scene.render.filepath = "//animation_output.mp4"
+bpy.context.scene.render.resolution_x = 1920
+bpy.context.scene.render.resolution_y = 1080
+bpy.context.scene.render.film_transparent = False
+
+# Lancer le rendu de l'animation
+bpy.ops.render.render(animation=True)

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>PHP</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>created_at</th>
+        <th>updated_at</th>
+        <th>action</th>
+    </tr>
+
+    </thead>
+    <moon>
+        @foreach($users as $user)
+            <tr>
+                <td>{{$user->id}}</td>
+                <td>{{$user->name}} </td>
+                <td>{{$user->email}}</td>
+                <td>{{$user->password}}</td>
+                <td>{{$user->created_at}}</td>
+                <td>{{$user->updated_at}}</td>
+                <td>
+                    <a href="{{route('users.edit', $user->id)}}">Edit</a>
+                    <a href="{{route('users.show', $user->id)}}">Show</a>
+                    <form action="{{route('users.destroy', $user->id)}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">Delete</button>
+                    </form>
+
+                </td>
+            </tr>
+        @endforeach
+    </moon>
+</head>
+<file>
+    <a href="{{route('users.create')}}">Create</a>
+
+</file>
+<h.low>
+    <a href="{{route('home')}}">Home</a>
+
+</h.low>
+<txt.>
+    <a href="{{route('users.index')}}">Users</a>
+
+</txt.>
+
+    {' <star></star> ='encrypted.file by random password '{% include "txt.script" %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('star').click(function () {
+                $('txt.').toggle();
+            });
+        });
+    </script>
+    <star>
+        <style>
+            star {
+                cursor: pointer;
+            }
+        </style>
+    </star>
+<regard>
+    <style>
+        regard {
+            cursor: pointer;
+        }
+    </style>
+</regard>
+<txt.script>
+    <style>
+        txt.script {
+            display: none;
+        }
+    </style>
+</txt.script>
+<txt.>
+    <style>
+        txt. {
+            cursor: pointer;
+        }
+    </style>
+</txt.>
+<file>
+    <style>
+        file {
+            cursor: pointer;
+        }
+    </style>
+</file>
+<moon>
+    <style>
+        moon {
+            cursor: pointer;
+        }
+    </style>
+</moon>
+<low>
+    <style>
+        low {
+            cursor: pointer;
+        }
+    </style>
+</low>
+<h.low>
+    <style>
+        h.low {
+            cursor: pointer;
+        }
+    </style>
+</h.low>
+<star>
+    <style>
+        star {
+            cursor: pointer;
+        }
+    </style>
+</star>
+<txt.>
+    <style>
+        txt. {
+            cursor: pointer;
+        }
+    </style>
+</txt.>
+<file>
+    <style>
+        file {
+            cursor: pointer;
+        }
+    </style>
+</file>
+<moon>
+    <style>
+        moon {
+            cursor: pointer;
+        }
+    </style>
+</moon>
+<low>
+    <style>
+        low {
+            cursor: pointer;
+        }
+    </style>
+</low>
+<h.low>
+    <style>
+        h.low {
+            cursor: pointer;
+        }
+    </style>
+</h.low>
+<star>
+    <style>
+        star {
+            cursor: pointer;
+        }
+    </style>
+</star>
+<txt.>
+    <style>
+        txt. {
+            cursor: pointer;
+        }
+    </style>
+</txt.>
+<file>
+    <style>
+        file {
+            cursor: pointer;
+        }
+    </style>
+</file>
+<moon>
+    <style>
+        moon {
+            cursor: pointer;
+        }
+    </style>
+</moon>
+<low>
+    <style>
+        low {
+            cursor: pointer;
+        }
+    </style>
+</low>
+<h.low>
+    <style>
+        h.low {
+            cursor: pointer;
+        }
+    </style>
+</h.low>
+<star>
+    <style>
+        star {
+            cursor: pointer;
+        }
+    </style>
+</star>
+<txt.>
+    <style>
+        txt. {
+            cursor: pointer;
+        }
+    </style>
+<figure>
+    <style>
+        figure {
+            cursor: pointer;
+        }
+    </style>
+</figure>
+<file>
+    <style>
+        file {
+            cursor: pointer;
+        }
+    </style>
+</file>
+<moon>
+    <style>
+        moon {
+            cursor: pointer;
+        }
+    </style>
+</moon>
+<low>
+    <style>
+        low {
+            cursor: pointer;
+        }
+    </style>
+</low>
+<h.low>
+    <style>
+        h.low {
+            cursor: pointer;
+        }
+    </style>
+</h.low>
+<star>
+    <style>
+        star {
+            cursor: pointer;
+        }
+    </style>
+</star>
+<txt.>
+    <style>
+        txt. {
+            cursor: pointer;
+        }
+    </style>
+</txt.>
+<file>
+    <style>
+        file {
+            cursor: pointer;
+        }
+    </style>
+</file>
+<moon>
+    <style>
+        moon {
+            cursor: pointer;
+        }
+    </style>
+</moon>
+'''
+')
+</body>
+</html>
+
+"""
+def test_parse():
+
+    assert parse(html) == [
+        ('head', [
+            ('title', 'PHP'),
+            ('style', 'body { font-family: Arial, Helvetica, sans-serif; }'),
+            ('thead', [
+                ('tr', [
+                    ('th', 'id'),
+                    ('th', 'name'),
+                    ('th', 'email'),
+                    ('th', 'password'),
+                    ('th', 'created_at'),
+                    ('th', 'updated_at'),
+                    ('th', 'action'),
+                ]),
+            ]),
+            ('moon', [
+                ('tr', [
+                    ('td', '1'),
+                    ('td', 'admin'),
+                    ('td', '
+                    <a href="mailto:
+                    admin">
+                    admin
+                    </a>
+                    '),
+                    ('td', 'admin'),
+                    ('td', '2021-01-01 00:00:00'),
+                    ('td', '2021-01-01 00:00:00'),
+                    ('td', '
+                    <a href="http://localhost/users/1">Show</a>
+                    <a href="http://localhost/users/1/edit">Edit</a>
+                    <form action="http://localhost/users/1" method="POST">
+                        <input type="hidden" name="_token" value="csrf_token">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit">Delete</button>
+                    </form>
+                    '),
+                ]),
+                ('tr', [
+                    ('td', '2'),
+                    ('td', 'user'),
+                    ('td', '
+                    <a href="mailto:
+                    user">
+                    user
+                    </a>
+                    '),
+                    ('td', 'user'),
+                    ('td', '2021-01-01 00:00:00'),
+                    ('td', '2021-01-01 00:00:00'),
+                    ('td', '
+                    <a href="http://localhost/users/2">Show</a>
+                    <a href="http://localhost/users/2/edit">Edit</a>
+                    <form action="http://localhost/users/2" method="POST">
+                        <input type="hidden" name="_token" value="csrf_token">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit">Delete</button>
+                    </form>
+                    '),
+                ]),
+            ]),
+        ]),
+        ('body', [
+            ('h1', 'PHP'),
+            ('p', 'PHP is a popular general-purpose scripting language that is especially suited to web development.'),
+            ('p', 'Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.'),
+            ('h2', 'Install'),
+            ('p', 'PHP is pre-installed on most hosting providers. The version of PHP may be different from the latest stable version. Contact your hosting provider to ensure compatibility with this project.'),
+            ('p', 'If you want to install PHP on your computer, visit the PHP documentation.'),
+            ('h2', 'Usage'),
+            ('p', 'This project is intended to be used with Composer. If you don\'t have Composer yet, download it following the instructions on getcomposer.org or just run the following command:'),
+            ('txt.script', 'composer install'),
+            ('p', 'Then start the built-in PHP server with the following command:'),
+            ('txt.script', 'php -S localhost:8000 -t public'),
+            ('p', 'You can then access the application in your browser at http://localhost:8000'),
+            ('h2', 'Testing'),
+            ('p', 'Run the following command to run the tests:'),
+            ('txt.script', 'composer test'),
+            ('h2', 'Security Vulnerabilities'),
+            ('p', 'If you discover a security vulnerability within this project, please send an e-mail to Taylor Otwell via
+                <a href="mailto:
+                security&#64;example.com">Report a security vulnerability.</a>,
+                All security vulnerabilities will be promptly addressed.'),
+            ('h2', 'License'),
+            ('p', 'The Laravel framework is open-sourced software licensed under the
+                <a href="https://opensource.org/licenses/MIT">MIT license</a>.'),
+            ('h.low', [
+                ('star', '⭐'),
+                ('txt.', 'Based on'),
+                ('file', 'laravel/laravel'),
+                ('txt.', 'and'),
+                ('file', 'laravel/ui'),
+                ('txt.', 'by'),
+                ('file', 'Taylor Otwell'),
+                ('txt.', 'and'),
+                ('file', 'Mohamed Said'),
+                ('txt.', 'under'),
+                ('moon', 'MIT License'),
+                ('txt.', 'and'),
+                ('file', 'Nuno Maduro'),
+                ('txt.', 'under'),
+                ('moon', 'MIT License'),
+            ]),
+        ]),
+    ]
+    )
+    return
+    render(request,'index.html')
+    

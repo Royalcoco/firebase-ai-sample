@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+
+#changeSize {
+    font-size: 20px;
+}
+
+#alignText {
+    text-align: justify;
+}
+
+#imageOverlay {
+    position: relative;
+    display: inline-block;
+}
+
+#imageOverlay img {
+    max-width: 100%;
+}
+
+audio {
+    margin-top: 10px;
+    display: block;
+}
+
+#changeColor {
+    color: #f00;
+}
+
+#changeBackground {
+    background-color: #ccc;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+#imageOverlay:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+#imageOverlay .overlay {
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageOverlay .overlay p {
+    text-align: center;
+}
+
+#imageOverlay .overlay a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#imageOverlay .overlay a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#imageOverlay .overlay a:active {
+    background-color: #000;
+    color: #fff;
+}
+
+#imageOverlay .overlay a:focus {
+    outline: none;
+}
+
+#imageOverlay .overlay a:visited {
+    color: #fff;
+}
+
+#imageOverlay .overlay a:link {
+    color: #fff;
+}
+
+#imageOverlay .overlay a:visited:hover {
+    color: #000;
+}
+
+#imageOverlay .overlay a:visited:active {
+    color: #fff;
+}
+
+#imageOverlay .overlay a:visited:focus {
+    color: #fff;
+}
+
+#imageOverlay .overlay a:visited:link {
+    color: #fff;
+}
+
+#imageOverlay .overlay a:visited:visited {
+    color: #fff;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+a img{
+    border: none;
+}
+p {
+    color: #666;
+}
+
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+/* ---------------------------------------------- */
+/* Path: HTML_V2.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#changeFont {
+    font-family: "Times New Roman", serif;
+}
+```
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML V2</title>
+    <link rel="stylesheet" href="HTML_V2.css">
+</head>

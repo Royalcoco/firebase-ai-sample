@@ -1,0 +1,637 @@
+<address.root>
+    <address>
+        <address.id>1</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>2</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>3</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>4</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>5</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>6</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>7</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>8</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>9</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+</address.root>
+```
+I am trying to get the following output:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<address.root>
+    <address>
+        <address.id>1</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>2</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+</address.root>
+```
+I am using the following XSLT:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="2.0"
+    xmlns:address="http://www.example.com/address"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:output method="xml" indent="yes"/>
+
+    <xsl:template match="address.root">
+        <xsl:copy>
+            <xsl:apply-templates select="address[position() &lt; 3]"/>
+        </xsl:copy>
+    </xsl:template>
+
+    <xsl:template match="address">
+        <xsl:copy-of select="."/>
+    </xsl:template>
+    </xsl:stylesheet>
+```
+But I am getting the following output:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<address.root>
+    <address>
+        <address.id>1</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+    <address>
+        <address.id>2</address.id>
+        <address.street>street</address.street>
+        <address.city>city</address.city>
+        <address.state>state</address.state>
+        <address.zip>zip</address.zip>
+    </address>
+</address.root>
+```
+I am not sure why the other address elements are not being copied.  Any help would be appreciated.  Thanks.
+Achieved task and copy same
+```
+<xsl:template match="address.root">
+    <xsl:copy>
+        <xsl:apply-templates select="address[position() &lt; 3]"/>
+    </xsl:copy>
+</xsl:template>
+<xsl:template match="address">
+    <xsl:copy-of select="."/>
+
+</xsl:template>
+<server.{% comment %}
+<xsl:template match="address.root">
+    <xsl:copy>
+        <xsl:apply-templates select="address[position() &lt; 3]"/>
+    </xsl:copy>
+</xsl:template>
+<xsl:template match="address">
+    <xsl:copy-of select="."/>
+</xsl:template>
+{% endcomment %}
+```
+<key.breaker>
+    <key>
+        <key.id>1</key.id>
+        <key.name>key1</key.name>
+        <key.value>value1</key.value>
+        <key.description>desc1</key.description>
+        <key.type>string</key.type>
+        {% comment %}
+        <key.type>string</key.type>
+        {% endcomment %}
+
+    </key>
+    <chain>
+        <chain.id>1</chain.id>
+        <chain.name>chain1</chain.name>
+        <chain.description>desc1</chain.description>
+        <chain.key>
+            <chain.key.id>1</chain.key.id>
+            <chain.key.name>key1</chain.key.name>
+            <chain.key.value>value1</chain.key.value>
+            <chain.key.description>desc1</chain.key.description>
+            <chain.key.type>string</chain.key.type>
+        </chain.key>
+        <!--
+        <chain.key>
+            <chain.key.id>2</chain.key.id>
+            <chain.key.name>key2</chain.key.name>
+            <chain.key.value>value2</chain.key.value>
+            <chain.key.description>desc2</chain.key.description>
+            <chain.key.type>string</chain.key.type>
+        </chain.key>
+        -->
+        <code.system>
+            <code.system.id>1</code.system.id>
+            <code.system.name>system1</code.system.name>
+            <code.system.description>desc1</code.system.description>
+            <code.system.key>
+                <code.system.key.id>1</code.system.key.id>
+                <code.system.key.name>key1</code.system.key.name>
+                <code.system.key.value>value1</code.system.key.value>
+                <code.system.key.description>desc1</code.system.key.description>
+                <code.system.key.type>string</code.system.key.type>
+            </code.system.key>
+            <!--
+            <code.system.key>
+                <code.system.key.id>2</code.system.key.id>
+                <code.system.key.name>key2</code.system.key.name>
+                <code.system.key.value>value2</code.system.key.value>
+                <code.system.key.description>desc2</code.system.key.description>
+                <code.system.key.type>string</code.system.key.type>
+            </code.system.key>
+            -->
+        </code.system>
+    </chain>
+    <chain>
+        <chain.id>2</chain.id>
+        <chain.name>chain2</chain.name>
+        <chain.description>desc2</chain.description>
+        <chain.key>
+            <chain.key.id>1</chain.key.id>
+            <chain.key.name>key1</chain.key.name>
+            <chain.key.value>value1</chain.key.value>
+            <chain.key.description>desc1</chain.key.description>
+            <chain.key.type>string</chain.key.type>
+        </chain.key>
+        <!--
+        <chain.key>
+            <chain.key.id>2</chain.key.id>
+            <chain.key.name>key2</chain.key.name>
+            <chain.key.value>value2</chain.key.value>
+            <chain.key.description>desc2</chain.key.description>
+            <chain.key.type>string</chain.key.type>
+        </chain.key>
+        -->
+        <code.system>
+            <code.system.id>1</code.system.id>
+            <code.system.name>system1</code.system.name>
+            <code.system.description>desc1</code.system.description>
+            <code.system.key>
+                <code.system.key.id>1</code.system.key.id>
+                <code.system.key.name>key1</code.system.key.name>
+                <code.system.key.value>value1</code.system.key.value>
+                <code.system.key.description>desc1</code.system.key.description>
+                <code.system.key.type>string</code.system.key.type>
+            </code.system.key>
+            <!--
+            <code.system.key>
+                <code.system.key.id>2</code.system.key.id>
+                <code.system.key.name>key2</code.system.key.name>
+                <code.system.key.value>value2</code.system.key.value>
+                <code.system.key.description>desc2</code.system.key.description>
+                <code.system.key.type>string</code.system.key.type>
+            </code.system.key>
+            -->
+        </code.system>
+    </chain>
+</key.breaker>
+<description>
+    <description.id>1</description.id>
+    <description.name>desc1</description.name>
+    <description.value>value1</description.value>
+    <description.description>desc1</description.description>
+    <description.type>string</description.type>
+    {% comment %}
+    <description.type>string</description.type>
+    {% endcomment %}
+
+</description>
+<position>
+    <position.id>1</position.id>
+    <position.name>pos1</position.name>
+    <position.value>value1</position.value>
+    <position.description>desc1</position.description>
+    <position.type>string</position.type>
+    {% comment %}
+    <position.type>string</position.type>
+    {% endcomment %}
+
+</position>
+<computer>
+    <computer.id>1</computer.id>
+    <computer.name>comp1</computer.name>
+    <computer.value>value1</computer.value>
+    <computer.description>desc1</computer.description>
+    <computer.type>string</computer.type>
+    {% comment %}
+    <computer.type>string</computer.type>
+    {% endcomment %}
+    <computer.key>
+        <computer.key.id>1</computer.key.id>
+        <computer.key.name>key1</computer.key.name>
+        <computer.key.value>value1</computer.key.value>
+        <computer.key.description>desc1</computer.key.description>
+        <computer.key.type>string</computer.key.type>
+    </computer.key>
+    <!--
+    <computer.key>
+        <computer.key.id>2</computer.key.id>
+        <computer.key.name>key2</computer.key.name>
+        <computer.key.value>value2</computer.key.value>
+        <computer.key.description>desc2</computer.key.description>
+        <computer.key.type>string</computer.key.type>
+    </computer.key>
+    -->
+    <computer.code>
+        <computer.code.id>1</computer.code.id>
+        <computer.code.name>code1</computer.code.name>
+        <computer.code.value>value1</computer.code.value>
+        <computer.code.description>desc1</computer.code.description>
+        <computer.code.type>string</computer.code.type>
+    </computer.code>
+    <!--
+    <computer.code>
+        <computer.code.id>2</computer.code.id>
+        <computer.code.name>code2</computer.code.name>
+        <computer.code.value>value2</computer.code.value>
+        <computer.code.description>desc2</computer.code.description>
+        <computer.code.type>string</computer.code.type>
+    </computer.code>
+    -->
+<deployement>
+    <deployement.id>1</deployement.id>
+    <deployement.name>dep1</deployement.name>
+    <deployement.value>value1</deployement.value>
+    <deployement.description>desc1</deployement.description>
+    <deployement.type>string</deployement.type>
+    {% comment %}
+    <deployement.type>string</deployement.type>
+    {% endcomment %}
+    <deployement.key>
+        <deployement.key.id>1</deployement.key.id>
+        <deployement.key.name>key1</deployement.key.name>
+        <deployement.key.value>value1</deployement.key.value>
+        <deployement.key.description>desc1</deployement.key.description>
+        <deployement.key.type>string</deployement.key.type>
+    </deployement.key>
+    <!--
+    <deployement.key>
+        <deployement.key.id>2</deployement.key.id>
+        <deployement.key.name>key2</deployement.key.name>
+        <deployement.key.value>value2</deployement.key.value>
+        <deployement.key.description>desc2</deployement.key.description>
+        <deployement.key.type>string</deployement.key.type>
+    </deployement.key>
+    -->
+    <deployement.code>
+        <deployement.code.id>1</deployement.code.id>
+        <deployement.code.name>code1</deployement.code.name>
+        <deployement.code.value>value1</deployement.code.value>
+        <deployement.code.description>desc1</deployement.code.description>
+        <deployement.code.type>string</deployement.code.type>
+    </deployement.code>
+    <!--
+    <deployement.code>
+        <deployement.code.id>2</deployement.code.id>
+        <deployement.code.name>code2</deployement.code.name>
+        <deployement.code.value>value2</deployement.code.value>
+        <deployement.code.description>desc2</deployement.code.description>
+        <deployement.code.type>string</deployement.code.type>
+    </deployement.code>
+    -->
+<access>
+    <access.id>1</access.id>
+    <access.name>acc1</access.name>
+    <access.value>value1</access.value>
+    <access.description>desc1</access.description>
+    <access.type>string</access.type>
+    {% comment %}
+    <access.type>string</access.type>
+    {% endcomment %}
+    <access.key>
+        <access.key.id>1</access.key.id>
+        <access.key.name>key1</access.key.name>
+        <access.key.value>value1</access.key.value>
+        <access.key.description>desc1</access.key.description>
+        <access.key.type>string</access.key.type>
+    </access.key>
+    <!--
+    <access.key>
+        <access.key.id>2</access.key.id>
+        <access.key.name>key2</access.key.name>
+        <access.key.value>value2</access.key.value>
+        <access.key.description>desc2</access.key.description>
+        <access.key.type>string</access.key.type>
+    </access.key>
+    -->
+    <access.code>
+        <access.code.id>1</access.code.id>
+        <access.code.name>code1</access.code.name>
+        <access.code.value>value1</access.code.value>
+        <access.code.description>desc1</access.code.description>
+        <access.code.type>string</access.code.type>
+    </access.code>
+    <!--
+    <access.code>
+        <access.code.id>2</access.code.id>
+        <access.code.name>code2</access.code.name>
+        <access.code.value>value2</access.code.value>
+        <access.code.description>desc2</access.code.description>
+        <access.code.type>string</access.code.type>
+    </access.code>
+    -->
+<computer>
+    <computer.id>1</computer.id>
+    <computer.name>comp1</computer.name>
+    <computer.value>value1</computer.value>
+    <computer.description>desc1</computer.description>
+    <computer.type>string</computer.type>
+    {% comment %}
+    <computer.type>string</computer.type>
+    {% endcomment %}
+    <computer.key>
+        <computer.key.id>1</computer.key.id>
+        <computer.key.name>key1</computer.key.name>
+        <computer.key.value>value1</computer.key.value>
+        <computer.key.description>desc1</computer.key.description>
+        <computer.key.type>string</computer.key.type>
+    </computer.key>
+    <!--
+    <computer.key>
+        <computer.key.id>2</computer.key.id>
+        <computer.key.name>key2</computer.key.name>
+        <computer.key.value>value2</computer.key.value>
+        <computer.key.description>desc2</computer.key.description>
+        <computer.key.type>string</computer.key.type>
+    </computer.key>
+    -->
+    <computer.code>
+        <computer.code.id>1</computer.code.id>
+        <computer.code.name>code1</computer.code.name>
+        <computer.code.value>value1</computer.code.value>
+        <computer.code.description>desc1</computer.code.description>
+        <computer.code.type>string</computer.code.type>
+    </computer.code>
+    <!--
+    <computer.code>
+        <computer.code.id>2</computer.code.id>
+        <computer.code.name>code2</computer.code.name>
+        <computer.code.value>value2</computer.code.value>
+        <computer.code.description>desc2</computer.code.description>
+        <computer.code.type>string</computer.code.type>
+    </computer.code>
+    -->
+<user>
+    <user.id>30586947-c1b7-
+    <user.name>user1</user.name>
+    <user.password><PASSWORD></user.password>
+    <user.description>desc1</user.description>
+    <user.type>string</user.type>
+    {% comment %}
+    <user.type>string</user.type>
+    {% endcomment %}
+    <user.key>
+        <user.key.id>1</user.key.id>
+        <user.key.name>key1</user.key.name>
+        <user.key.value>value1</user.key.value>
+        <user.key.description>desc1</user.key.description>
+        <user.key.type>string</user.key.type>
+    </user.key>
+    <!--
+    <user.key>
+        <user.key.id>2</user.key.id>
+        <user.key.name>key2</user.key.name>
+        <user.key.value>value2</user.key.value>
+        <user.key.description>desc2</user.key.description>
+        <user.key.type>string</user.key.type>
+    </user.key>
+    -->
+    <user.code>
+        <user.code.id>1</user.code.id>
+        <user.code.name>code1</user.code.name>
+        <user.code.value>value1</user.code.value>
+        <user.code.description>desc1</user.code.description>
+        <user.code.type>string</user.code.type>
+    </user.code>
+    <!--
+    <user.code>
+        <user.code.id>2</user.code.id>
+        <user.code.name>code2</user.code.name>
+        <user.code.value>value2</user.code.value>
+        <user.code.description>desc2</user.code.description>
+        <user.code.type>string</user.code.type>
+    </user.code>
+    -->
+```
+I want to get the value of the password field. I tried to use the following code:
+```
+import xml.etree.ElementTree as ET
+tree = ET.parse('test.xml')
+root = tree.getroot()
+for child in root:
+    print(child.tag, child.attrib)
+```
+But I get the following output:
+```
+access
+computer
+user
+```
+I want to get the value of the password field. How can I do this?
+
+I tried to use the following code:
+```
+import xml.etree.ElementTree as ET
+tree = ET.parse('test.xml')
+root = tree.getroot()
+for child in root:
+    print(child.tag, child.attrib)
+    for child2 in child:
+        print(child2.tag, child2.attrib)
+```
+But I get the following output:
+```
+access {}
+access.id {}
+access.name {}
+access.value {}
+access.description {}
+access.type {}
+access.key {}
+access.code {}
+computer {}
+computer.id {}
+computer.name {}
+computer.value {}
+computer.description {}
+computer.type {}
+computer.key {}
+computer.code {}
+user {}
+user.id {}
+user.name {}
+user.password {}
+user.description {}
+user.type {}
+user.key {}
+user.code {}
+```
+I want to get the value of the password field. How can I do this?
+
+/template * follow rule for encrypt' zip file key.breaker {% autoescape on %}
+{% comment %}
+{% endcomment
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape off %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+{% autoescape on %}
+{% end
+{%
+%}
+{{ }}
+{% endautoescape %}
+
+{% autoescape on %}
+{% end
+{%
+<article>article</article>
+<aside>aside</aside>
+
+<blockquote>blockquote</blockquote>
+<br>br</br>
+<caption>caption</caption>
+<col>col</col>
+<colgroup>colgroup</colgroup>
+<dd>dd</dd>
+<details>details</details>
+<dialog>dialog</dialog>
+<dl>dl</dl>
+<dt>dt</dt>
+<figcaption>figcaption</figcaption>
+<figure>figure</figure>
+<footer>footer</footer>
+<header>header</header>
+<hgroup>hgroup</hgroup>
+<hr>hr</hr>
+<li>li</li>
+<main>main</main>
+<ol>ol</ol>
+<p>p</p>
+<pre>pre</pre>
+<section>section</section>
+<table>table</table>
+<tbody>tbody</tbody>
+<td>td</td>
+<tfoot>tfoot</tfoot>
+<th>th</th>
+<thead>thead</thead>
+<tr>tr</tr>
+<ul>ul</ul>
+<video>video</video>
+{% endautoescape %}
+```
+I want to get the value of the password field. How can I do this?

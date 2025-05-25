@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../selenium-standalone-chromium"
+		},
+		{
+			"name": "entry",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

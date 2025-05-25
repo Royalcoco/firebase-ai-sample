@@ -1,0 +1,7 @@
+Mining block 1 at level 0...
+Block mined! Nonce: 8432, Hash: 0000a1b2..., Reward: 50 tokens
+Mining sub-block 1.1 at level 1...
+Block mined! Nonce: 3275, Hash: 0000c3d4..., Reward: 10 tokens
+User Balances:
+Alice: 60 tokens
+Bob: 45 tokens

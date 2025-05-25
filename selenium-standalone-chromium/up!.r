@@ -1,0 +1,262 @@
+<sup>library</sup>(dplyr)
+<sup>library</sup>(readr)
+<sup>library</sup>(stringr)
+<sup>library</sup>(purrr)
+<sup>library</sup>(tibble)
+<sup>library</sup>(tidyr)
+<sup>library</sup>(ggplot2)
+<sup>library</sup>(forcats)
+forcats. "(dress.code.)"
+)"
+input = input from code/dispose code
+output = output from code/dispose code
+
+s'return' <- function(x) {
+  return(x)
+} 'turn'. function(x) {
+  return(x)
+} 'act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+s'return' <- function(x) {
+  return(x)
+} 'turn'. function(x) {
+  return(x)
+} 'act.data.from' <- function(x) {
+  return(x)
+} 'act.data.Fl$'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+if from src'.(-) so act.data.seq($'(-)'data.frame(..., row.names = NULL, check.rows = FALSE, check.names = TRUE, stringsAsFactors = default.stringsAsFactors(.)'), "-~{.to)}:/'':;,""&'"(-)' by''; "'')
+
+# Your code here
+input <- read_csv(input)
+output <- read_csv(output)
+
+input <- input %>%
+  mutate(
+    `dress.code` = str_replace(`dress.code`, " ", ""),
+    `dress.code` = str_replace(`dress.code`, "casual", "Casual"),
+    `dress.code` = str_replace(`dress.code`, "smartcasual", "Smart Casual"),
+    `dress.code` = str_replace(`dress.code`, "smart", "Smart"),
+    `dress.code` = str_replace(`dress.code`, "formal", "Formal"),
+    `dress.code` = str_replace(`dress.code`, "blacktie", "Black Tie")
+  )
+  '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                    '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                        '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                            '(,.`\r\nusercontent\r\n`)' <- output %>% select(`\r\nusercontent\r\n`) %>% pull()
+                                                                                '(,.`\r *¨\r\n`)' <- output %>% select(`\r *¨\r\n`) %>% pull()
+
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+output <- output %>%'(,.`\r\nusercontent\r\n`)' <- input %>% select(`\r\nusercontent\r\n`) %>% pull()
+
+main :'For.mate(`\r\n),.'])=\r
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+if (main :'For.mate(`\r\n),.'])=\r print(main :'For.mate(`\r\n),.'])=\r)
+
+output <- output %>%
+  select(`\r\nusercontent\r\n`) %>%
+  mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+isole data' -*__doc__.zip compressed
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%
+    select(`\r\nusercontent\r\n`) %>%
+    mutate(`\r\nusercontent\r\n` = str_replace(`\r\nusercontent\r\n`, " ", ""))
+output <- output %>%

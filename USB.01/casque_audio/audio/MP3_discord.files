@@ -1,0 +1,59 @@
+#"bluetooth.servers.visitors #('defined in Bluetooth.app.config)
+Reverse =/= #"b signalfree hotspot #
+"""
+This module defines the Visitor classes for the `Bluetooth` application configuration, which is used to configure how the `Bluetooth` application is connected to the device and to connect
+This module defines the Visitor classes for `Bluetooth.app.config`.   These are used by `BluetoothAppConfig` to process configuration data read from a
+This module defines the Visitor class, which is used to traverse an AST and perform some operation on it.  The visitor pattern allows one
+This module contains the configuration for the Visitor class of the servers package, which is used to represent a server that accepts connections from clients and respond
+This module defines the configuration for a server that listens on all network interfaces and provides services to
+This module defines the Visitor classes for the `Bluetooth` application configuration, which
+is used to configure and customize how the `Bluetooth` server behaves when it is running.
+
+The visitor pattern is a design pattern that allows you to add functionality to existing
+classes without modifying their source code. It's an alternative to subclassing for adding
+new behavior to an object. The idea behind the visitor pattern is to separate the algorithm
+from the data structure by encapsulating them separately using visitors. In this case, we
+use visitor patterns to provide default implementations of various aspects of the `Bluetooth`
+server's behavior.
+
+Visitors are implemented as subclasses of the base class `ConfigVisitor`, which provides
+a basic implementation of all methods defined by the `ConfigVisitor` protocol. Each method
+in the `ConfigVisitor` protocol has a docstring explaining what it does and what kind of
+argument(s) it expects. You can refer to these docstrings for more information on each
+method.
+
+To define your own visitor, simply create   a new `ConfigVisitor` subclass and implement
+the missing methods according to your needs. If a method is not implemented in your
+subclass, Python will automatically call the corresponding method from the base class. This
+allows you to override only the specific methods you need or leave the rest alone if you need
+to use the defaults provided by the base class.
+
+Here's an example of defining a simple visitor:
+
+python
+    class MyVisitor(ConfigVisitor):
+        def visit_ServerSocket(self, socket):
+            print("Found ServerSocket: %r" % socket)
+
+    config = BluetoothAppConfiguration()
+    config.add_socket(ServerSocket(...))  # Add some sockets to the config
+    config.accept(MyVisitor())             # Use the MyVisitor to process the config
+
+In this example, `MyVisitor` overrides the `visit_ServerSocket()` method but leaves all
+other methods unimplemented, so they
+will call through to the base class implementation. When the `config.accept()` method is called with
+an instance of `MyVisitor()`, it will be passed every `ServerSocket` found in the config,
+and "Found ServerSocket:" messages will be printed out.
+
+Note that the `ConfigVisitor` class hierarchy is quite complex due to the many different types of methods.
+If you don't need to modify all of the methods, it may be easier to start with one of the simpler classes like `AdapterConfigVisitor`.
+If you don't need to modify all parts of the configuration, it may be simpler to just iterate over
+the appropriate lists (`services`, `advertisements`, etc.) directly instead of using the visitor
+pattern. However, if you do need to perform operations on multiple kinds of objects at once, then
+using the visitor pattern makes sense.  For example the `remove_service()` function could have been
+implemented as follows:
+
+python
+    def remove_service(self, service):
+        self.services.remove(service)   # remove the service
+        service.close()                 # close the underlying GATTService object, too.operations.

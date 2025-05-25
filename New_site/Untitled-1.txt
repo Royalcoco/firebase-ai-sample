@@ -1,0 +1,425 @@
+<press.article>
+    <press.head>
+        <press.title>My Article</press.title>
+        <press.author>John Doe</press.author>
+        <press.date>2017-01-01</press.date>
+    </press.head>
+    <press.body>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+    </press.body>
+</press.article>
+```
+<author.ai>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<author.ai>
+    <author.name>John Doe</author.name>
+    <author.email>
+        <author.address>
+            <author.local>john.doe</author.local>
+            <author.domain>example.com</author.domain>
+        </author.address>
+    </author.email>
+    <author.affiliation>
+        <author.department>Department of Computer Science</author.department>
+        <author.institution>University of Example</author.institution>
+        <author.city>Example City</author.city>
+        <author.country>Example Country</author.country>
+    </author.affiliation>
+</author.ai>
+```
+<author.ai>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<author.ai>
+    <author.name>John Doe</author.name>
+    <author.email>
+        <author.address>
+            <author.local>john.doe</author.local>
+            <author.domain>example.com</author.domain>
+        </author.address>
+    </author.email>
+    <author.affiliation>
+        <author.department>Department of Computer Science</author.department>
+        <author.institution>University of Example</author.institution>
+        <author.city>Example City</author.city>
+        <author.country>Example Country</author.country>
+    </author.affiliation>
+</author.ai>
+```
+<meta>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<meta>
+    <meta.name>viewport</meta.name>
+    <meta.content>width=device-width, initial-scale=1.0</meta.content>
+</meta>
+```
+<press.article>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<press.article>
+    <press.head>
+        <press.title>My Article</press.title>
+        <press.author>John Doe</press.author>
+        <press.date>2017-01-01</press.date>
+    </press.head>
+    <press.body>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+    </press.body>
+</press.article>
+```
+<luxor>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<luxor>
+    <luxor.head>
+        <luxor.title>My Article</luxor.title>
+        <luxor.author>John Doe</luxor.author>
+        <luxor.date>2017-01-01</luxor.date>
+    </luxor.head>
+    <luxor.body>
+        <luxor.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </luxor.p>
+        <luxor.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </luxor.p>
+    </luxor.body>
+</luxor>
+```
+<bodyth.inc>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<bodyth.inc>
+    <bodyth.head>
+        <bodyth.title>My Article</bodyth.title>
+        <bodyth.author>John Doe</bodyth.author>
+        <bodyth.date>2017-01-01</bodyth.date>
+    </bodyth.head>
+    <bodyth.body>
+        <bodyth.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </bodyth.p>
+        <bodyth.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </bodyth.p>
+    </bodyth.body>
+</bodyth.inc>
+```
+<m.bot>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<m.bot>
+    <m.bot.head>
+        <m.bot.title>My Article</m.bot.title>
+        <m.bot.author>John Doe</m.bot.author>
+        <m.bot.date>2017-01-01</m.bot.date>
+    </m.bot.head>
+    <m.bot.body>
+        <m.bot.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </m.bot.p>
+        <m.bot.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </m.bot.p>
+    </m.bot.body>
+</m.bot>
+```
+<press>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<press>
+    <press.head>
+        <press.title>My Article</press.title>
+        <press.author>John Doe</press.author>
+        <press.date>2017-01-01</press.date>
+    </press.head>
+    <press.body>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+        <press.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </press.p>
+    </press.body>
+</press>
+```
+<luxor>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<luxor>
+    <luxor.head>
+        <luxor.title>My Article</luxor.title>
+        <luxor.author>John Doe</luxor.author>
+        <luxor.date>2017-01-01</luxor.date>
+    </luxor.head>
+    <luxor.body>
+        <luxor.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </luxor.p>
+        <luxor.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </luxor.p>
+    </luxor.body>
+</luxor>
+```
+<bodyth>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<bodyth>
+    <bodyth.head>
+        <bodyth.title>My Article</bodyth.title>
+        <bodyth.author>John Doe</bodyth.author>
+        <bodyth.date>2017-01-01</bodyth.date>
+    </bodyth.head>
+    <bodyth.body>
+        <bodyth.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </bodyth.p>
+        <bodyth.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </bodyth.p>
+    </bodyth.body>
+</bodyth>
+```
+<react.get propertyName() {
+    return this.;
+}
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<react.get propertyName() {
+    return this.;
+}
+>
+    <react.get propertyName() {
+    return this.;
+}
+.head>
+        <react.get propertyName() {
+    return this.;
+}
+.title>My Article</react.get propertyName() {
+    return this.;
+}
+.title>
+        <react.get propertyName() {
+    return this.;
+}
+.author>John Doe</react.get propertyName() {
+    return this.;
+}
+.author>
+        <react.get propertyName() {
+    return this.;
+}
+.date>2017-01-01</react.get propertyName() {
+    return this.;
+}
+.date>
+    </react.get propertyName() {
+    return this.;
+}
+.head>
+    <react.get propertyName() {
+    return this.;
+}
+.body>
+        <react.get propertyName() {
+    return this.;
+}
+.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </react.get propertyName() {
+    return this.;
+}
+.p>
+        <react.get propertyName() {
+    return this.;
+}
+.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </react.get propertyName() {
+    return this.;
+}
+.p>
+    </react.get propertyName() {
+    return this.;
+}
+.body>
+</react.get propertyName() {
+    return this.;
+}
+>
+```
+<adress.article>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<adress.article>
+    <adress.article.head>
+        <adress.article.title>My Article</adress.article.title>
+        <adress.article.author>John Doe</adress.article.author>
+        <adress.article.date>2017-01-01</adress.article.date>
+    </adress.article.head>
+    <adress.article.body>
+        <adress.article.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </adress.article.p>
+        <adress.article.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </adress.article.p> <h4>(low.h7)</h4>
+        <adress.article.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+
+        </adress.article.p>
+    </adress.article.body>
+</adress.article>
+```
+<mac.port>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<mac.port>
+    <mac.port.head>
+        <mac.port.title>My Article</mac.port.title>
+        <mac.port.author>John Doe</mac.port.author>
+        <mac.port.date>2017-01-01</mac.port.date>
+    </mac.port.head>
+    <mac.port.body>
+        <mac.port.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </mac.port.p>
+        <mac.port.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc. Donec ultricies, nisl
+        vitae aliquam ultricies, nunc nisl aliquet elit, quis aliquam
+        nunc nisl vitae nunc.
+        </mac.port.p>
+    </mac.port.body> <Input:password>
+    <mac.port.p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+        ultricies, nisl vitae aliquam ultricies, nunc nisl aliquet
+        elit, quis aliquam nunc nisl vitae nunc.
+
+        </mac.port.p>
+
+</Input:password>
+</mac.port>
+```
+<breaker></breaker>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<breaker></breaker>
+```

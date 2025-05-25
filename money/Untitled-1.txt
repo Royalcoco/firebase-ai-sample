@@ -1,0 +1,10 @@
+Fractal Blockchain:
+Block(Index: 0, Level: 0, Hash: a1b2c3d4..., Sub-blocks: 0)
+Block(Index: 1, Level: 0, Hash: e5f6g7h8..., Sub-blocks: 2)
+Block(Index: 2, Level: 0, Hash: i9j0k1l2..., Sub-blocks: 1)
+
+Details of Main Block 1 and its Sub-blocks:
+Block(Index: 1, Level: 0, Hash: e5f6g7h8..., Sub-blocks: 2)
+   Block(Index: 1.1, Level: 1, Hash: m3n4o5p6..., Sub-blocks: 1)
+       Block(Index: 1.1.1, Level: 2, Hash: q7r8s9t0..., Sub-blocks: 0)
+   Block(Index: 1.2, Level: 1, Hash: u1v2w3x4..., Sub-blocks: 0)

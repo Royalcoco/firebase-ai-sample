@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<arbre>
+    <branche>
+        <feuille>1</feuille>
+        <feuille>2</feuille>
+        <feuille>3</feuille>
+    </branche>
+    <branche>
+        <feuille>4</feuille>
+        <feuille>5</feuille>
+        <feuille>6</feuille>
+    </branche>
+    <branche>
+        <feuille>7</feuille>
+        <feuille>8</feuille>
+        <feuille>9</feuille>
+    </branche>
+    </arbre></head><body>
+        </body>
+        <?php
+        $xml = simplexml_load_file('arbre.xml');
+        echo $xml->asXML();
+        ?>
+
+    </body>
+</arbre>
+<key.access>
+    <key>1</key>
+    <key>2</key>
+    <key>3</key>
+    <key>4</key>
+    <key>5</key>
+    <key>6</key>
+    <key>7</key>
+    <key>8</key>
+    <key>9</key>
+</key.access>
+</html>
+```
+I want to access the key values in the key.access tag and use them to access the corresponding feuille values in the arbre tag. I have tried using the following code but it doesn't work:
+```
+<?php
+$xml = simplexml_load_file('arbre.xml');
+foreach($xml->key.access as $key){
+    echo $xml->arbre->branche->feuille[$key];
+}
+?>
+```
+I have also tried using the following code but it doesn't work either:
+```
+<?php
+$xml = simplexml_load_file('arbre.xml');
+foreach($xml->key.access as $key){
+    echo $xml->arbre->branche->feuille[$key-1];
+}
+?>
+```

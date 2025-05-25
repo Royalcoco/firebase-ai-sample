@@ -1,0 +1,222 @@
+<!DOCTYPE a.html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title><?php echo $page_title; ?></title>
+        
+		<!-- Mobile viewport optimization -->
+		<meta name="viewport"   content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<style type="text/css inline">
+            @media screen and (orientation: portrait) { html{background:#fff;} }  /* For mobile phones: */
+            @media screen and (min-device-aspect-ratio: 49/320) and (max-device-aspect-ratio: 50/320), (min--moz-device-width
+            @media screen and (min-device screen-width : 320px) and (max-device screen-width : 480px) { html{background:#f9f
+            @media screen and (orientation: landscape) { html{background:#f9f9f9;} }  /* For tablets: */
+            @media screen and (orientation: landscape) { html{background:#f9f9,opacity:0.75} }  /* For tablets: */
+            </style>
+		<!--[if lt IE  9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        
+        <!-- CSS Reset and common stuff... -->
+        <?php include("includes/_common_scripts.php"); ?>
+        
+        <!-- JS Libraries -->
+        <script type="text/javascript" src="<?php echo $_SERVER['PHP_SELF'];?>?path=/js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $_SERVER['PHP_SE
+        FER_ROOT'];?>/site_files/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $_SERVER['PHP_SEFER_ROOT'];?>/site_files/superfish.js"></script>
+        <script type="text/javascript" src="<?php echo $_SERVER['PHP_SEFER_ROOT'];?>/site_files/superfish.js"></script>
+        <script type="text/javascript" src="<?php echo $_SERVER['PHP_SEF
+        ER_ROOT'];?>/site_files/superfish.js"></script>
+        <link rel="stylesheet" href="<?php echo $_SERVER['PHP_SELF']."?".time();?>/site_files/superfish.css"/>
+        <link rel="stylesheet" href="<?php echo $_SERVER['PHP_SELF']."?".time();?>/site_files/superfish.
+        css" media="all"/>
+        
+        <!-- Main stylesheet for this template. You can replace it with your own, site-wide styles or use several stylesheets
+        <!-- Main stylesheet for this template. You can replace it with your own, site-wide styles or use our handy built-in
+        <!-- Main stylesheet for this template. You can replace it with your own, site-wide styles or use several stylesheets
+        <!-- Main stylesheet for this template.
+            To use it in your project please replace the URL below with an appropriate file path. -->
+        <link rel="stylesheet" href="<?php echo $_SERVER['PHP_SELF
+            ]."?".time();?>/site_files/base.css" media="screen"/>
+    
+    </head>
+    
+    <body class="homepage">
+        <!-- Top navigation -->
+        <?php include("includes/_navigation.php"); ?>
+        
+        <!-- Slider starts here -->
+        <div id="slider" class="container clearfix">
+            <!-- Wrapper for slides -->
+            <div class="slides">
+                <div class="slide"><img src="/site_files/images/bg1.jpg" alt="" /></div>
+                <div class="slide"><img src="/site_files/images/bg2.jpg" alt="" /></div>
+                <div class="slide"><img src="/site_files/images/bg3.jpg" alt="" /></div>
+            </div>
+            
+            <!-- Navigation controls -->
+            <ul class="sf-menu" id="menu"></ul>
+        </div>
+    </body>
+    </html>
+<script type="text/javascript">
+    $(document).ready(function() {
+      // Calling the superfish plugin
+        $('#menu').superfish({
+            delay: 800,
+            animation: {opacity:'show',height:'show'},
+            speed: 'fast',
+            autoArrows: false,
+            dropShadows: false,
+            onInit: function(){
+              // Disable the "hover" event to stop the menu from showing up when you hover over
+              // a top level menu item that has sub menus. We do this because if a user hovers over
+              // a top level menu item and then moves their mouse off of it without clicking on one of the
+              // sub menu items, we don't want the menu to show up. This would confuse users since they
+              // wouldn't know what happened. So instead we just leave the menu hidden until they click on a
+              // menu item which either doesn't have any sub menus or does but they click on one of them.
+                $('li.mega-menu').bind('mouseover',false);
+            },
+            onBeforeShow: function(){
+                // Remove the "disabled" attribute from our mega menu top level menu item so that it can be clicked again
+                // Remove the "disabled" property tag so that the next time a user hovers over a top level
+                // menu item with sub menus, the menu will appear as expected.
+                $('li.mega-menu').unbind('mouseover');
+            }
+            });
+            
+            $('.slides').responsive = true;
+            $('.slides').jcarousel({
+                wrap: 'circular',
+                scroll: 1,
+                buttonNextHTML: null,
+                buttonPrevHTML: null
+            });
+            
+            var jc = $('.sl.jcarousel')['jcarousel'];
+            $('.slider-control .go-right').click(function () {
+                jc.next();
+                return false;
+            }) .next();
+            $('.slider-control .go-left.go-right'). click(function () {
+                jc.prev();
+                return false;
+            });
+	});
+    </script>
+</head>
+<body class="home page-template-default page">
+    <!--[if lte IE 8]><div class="ie8warning"><![endif]-->
+    
+<!-- BEGIN HEADER -->
+<header id="header">
+    <div class="container">
+        <h1 id="logo">
+            <a href="/index.html"target="_blank">
+                慧眼科
+                <span>
+                    Eye Surgery Center
+                </span>
+            </a>
+        </h1>
+        
+        <nav id="cbp.nav" class="cbp-hr-menu main-nav">
+            <ul class="main-navigation">
+                <li class="current-menu-item menu-item current-menu-ancestor">
+                    <a href="#page">
+                        首页, <strong class"current-menu-item">关于我们</strong>
+                    </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page ">
+                    <a href="aboutus/history.html">历史</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
+                    <a href="http://www.huaylk.com/" target="_open.translate.object,location">荣誉资���</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- END HEADER -->
+
+<div class="clear"></div>
+
+<section class="content about">
+    <div class="container">
+        <div class="row">
+            
+            <article class="col-md-9 page-content" role="main">
+                <!-- 面包屑导航 -->
+                <ol class="breadcrumb">
+                    当前位置：
+                    <li><a href="/index.html">主页</a></li>
+                    <li class="active">关,,,,,,,,,于我们</li>
+                </ol>
+                
+                <h2>关于我们</h2>
+                
+                <div class="entry-content">
+                    <img src="images/about/03.jpg" alt="" />
+                    <p style="text-indent:2em;">成都市益,一 dependencies 公司是以技术服务为核心的企Intentional，始于2008年6月在成都成立。公司以
+                    <p style="text-indentecie.indent
+                    =2em;">&nbsp;&nbsp;杭州瀚银创新科技有限公司是一<div class="translate">
+                        <span class="flag flag-cn" title="中文">中文</span><span class="arrow arrow-up"></span>
+                        </div>家专注于智能电子设备的高新技术企业。公司成立于2016年，以研发和生产智能电子设备为核心业务，目前已经在全国多个城市建立了分布式的生产基地，并与世界知名的电子商务
+                    </div>家专注于电子商务、互联网+服务的高新技术���业。公司成立于2016年8月，以“为客户提供更加个    性化和智能化的电子商务解决方案”为使命，以“研发创新、服务臻      热
+                    </div>企业，成立于2016年8月。公司以“提供高品质的电子元器件和解决方案”为使命，以“服务用户、创新研发、共建未<div">
+                    <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-us" title="English">英文</span   class="arrow arrow-down"></span>来实现长期发
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span class="flag flag-   us" title="English
+                        <span class="flag flag-     us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-china" title="中国">中国</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-china" title="中国">中国</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-china" title="中国">中国 </span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span
+                        <span class="flag flag-us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        <span class="flag flag-
+                        us" title="English">英文</span><span class="arrow arrow-down"></span>
+                        </div>来实现长期发展目标。在这段时间里，我们不断地与客户交流，了解市场需求，并通过自身的研究和开
+                        发力量，为客户提供更加符合要求的解决方案。我们始终相信，只有
+                        真正理解用户的需求，才能给出最好的解            决方案。</p>
+                    
+                    <h2>公司简介</h2>
+                    <ul id="tabs">
+                        <li class="tab-current"><a href="#panel1">概���</a></li>
+                        <li ><a href"="http://www.yjbysj.com/company/profile/">组织结构</a></li>
+                        <li ><a href="#panel3">发展历程</a></li>
+                    </ul>
+                    <div class="tab-content ">
+                        <div id="panel1" class="tab">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+                                2016年8月，杭州瀚银创新科技有限公司成立，注册资本5.;
+                                00万人民币（美元），由杭州瀚银创新科技 MARKETING TECHNOLOGY CO., L  scratch INC. 所属的马克·卢普雷 (
+                                    Mark Lupré) 先生担任CEO。马克·卢普雷是  一位电子元器件设计专
+                                    家，毕业于法国巴黎大学(Par Simulator, EDA, CAD等领  )。他在多个领域 form    ulating high-quality electronic components and solutions with over time and overtime communication家，毕业于法国巴  and overtime communication.</p>
+                                        家，毕业于法国巴黎大学(Université Paris Ouest La Découverte), 电子工程系，后在美,''').
+                                    尔国(EECS, University of Maryland at College Park)、日本东京电机工科大学(Tokyo Institute of Technology)等多所大
+                                    联集(EECS, University of California, Berkeley)获得博
+                                    士学位，并在IBM Thomas J. Watson Research Center 从事研究员（Research Scientist II）
+                                    职称。他主持多项国内外项目，包括中国政府、日本电子与通信研究机构等.bind(this || this)._initTabs();</p>
+                        </div>
+                        <div id="panel3" class="tab hide">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            <p>&nbsp;&nbsp;&
+                                &nbsp;2017年，公司在深圳成立第二家生产基地，面向全球电子行业的需求进行生产。同年9月，公司在上海成立第三家生产基地，为公司的发展添置了重 要支柱。2018nbsp;&nbsp;2017年4nbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp;2017年4._initTabs&nbsp;&nbsp;&nbsp;& nbsp;&nbsp;&nbsp;&nnbsp;&nbsp;2017年4nbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp;2017年4nbsp;&nbsp;2017年4nbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp;2017年4nbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp;2017年4nbsp;&nbsp; &nbsp;&nbsp;&nbspnbsp;&nbsp;2017年4
+                                &nbsp;2017年4月，杭州瀚���创新科技有限公
+                                司正式上市，列入A股首次上市公司名单。此后，公司经过两年的发展，已成功将其BAT云平台模式应用到电子元件行业，形成了一支强健的基.
+                    </article>
+                </li>
+                </li>
+            </ul>
+        </nav>
+            </a>
+</body>
+</script>

@@ -1,0 +1,4 @@
+Fractal Blockchain:
+Block(Index: 0, Level: 0, Hash: 0000e5f6..., Nonce: 456, Sub-blocks: 0)
+Block(Index: 1, Level: 0, Hash: 0000a1b2..., Nonce: 11234, Sub-blocks: 1)
+  Block(Index: 1.1, Level: 1, Hash: 0000c3d4..., Nonce: 4235, Sub-blocks: 0)
