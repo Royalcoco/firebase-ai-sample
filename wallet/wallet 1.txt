@@ -1,0 +1,154 @@
+import sqlite3
+import os
+import json
+import csv
+import math
+import hashlib
+import numpy as np
+import sounddevice as sd
+import zipfile
+import http.server
+import socketserver
+import threading
+from cryptography.fernet import Fernet
+
+# Génération de clé de chiffrement sur un hardware sécurisé
+def generate_hardware_key():
+    key_path = "key_secure-passe.throw"  # Stockage décentralisé simulé
+    if not os.path.exists(key_path):
+        key = Fernet.generate_key()
+        with open(key_path, "wb") as key_file:
+            key_file.write(key)
+
+def load_hardware_key():
+    key_path = "key_secure-passe.throw"
+    with open(key_path, "rb") as key_file:
+        return Fernet(key_file.read())
+
+generate_hardware_key()
+cipher = load_hardware_key()
+
+# Création de la base de données sécurisée
+def init_db():
+    conn = sqlite3.connect("wallet.db")
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS transactions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            type TEXT,
+            amount REAL,
+            price REAL,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS blocks (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            data TEXT,
+            hash TEXT,
+            previous_hash TEXT,
+            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_db()
+
+# Fonction de minage d'un block
+def mine_block(data):
+    conn = sqlite3.connect("wallet.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT hash FROM blocks ORDER BY id DESC LIMIT 1")
+    previous_hash = cursor.fetchone()
+    previous_hash = previous_hash[0] if previous_hash else "0" * 64
+    
+    block_data = json.dumps(data)
+    block_hash = hashlib.sha256(block_data.encode()).hexdigest()
+    
+    cursor.execute("INSERT INTO blocks (data, hash, previous_hash) VALUES (?, ?, ?)", (block_data, block_hash, previous_hash))
+    conn.commit()
+    conn.close()
+    print(f"🔗 Block miné avec hash: {block_hash}")
+    return block_hash
+
+# Fonction pour compresser et ajouter un block
+
+def zip_contract_with_block(filename="contract_2.zip", zip_filename="secure_block.zip"):
+    with open("contract_break.txt", "w") as file:
+        file.write("Rupture conventionnelle détectée. Activation de la clé matérielle.")
+    
+    with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as zipf:
+        zipf.write(filename)
+        zipf.write("contract_break.txt")
+    
+    block_hash = mine_block({"contract": filename, "zip": zip_filename})
+    print(f"📦 Fichier compressé avec block ajouté: {zip_filename}")
+
+# Fonction pour décompresser et manipuler le 3ᵉ contrat
+def unzip_and_verify_block(zip_filename="secure_block.zip", extract_to="."):
+    with zipfile.ZipFile(zip_filename, "r") as zipf:
+        zipf.extractall(extract_to)
+    print(f"📂 Fichiers extraits depuis {zip_filename}")
+    
+    third_contract_file = os.path.join(extract_to, "third_contract.txt")
+    if os.path.exists(third_contract_file):
+        with open(third_contract_file, "r") as file:
+            content = file.read()
+        manipulated_content = cipher.encrypt(content.encode())
+        with open(third_contract_file, "wb") as file:
+            file.write(manipulated_content)
+        print("🔑 Contrat sécurisé avec clé décentralisée.")
+    else:
+        print("⚠️ Aucun troisième contrat trouvé.")
+
+# Serveur HTTP universel pour partage décentralisé
+def start_http_server():
+    PORT = 8000
+    Handler = http.server.SimpleHTTPRequestHandler
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+        print(f"🌍 Serveur HTTP décentralisé démarré sur le port {PORT}")
+        httpd.serve_forever()
+
+# Lancer le serveur HTTP en arrière-plan
+threading.Thread(target=start_http_server, daemon=True).start()
+
+# Interface CLI améliorée
+def main():
+    while True:
+        print("\n========= TERMINAL WALLET =========")
+        print("1️⃣  Acheter Crypto")
+        print("2️⃣  Revendre Crypto")
+        print("3️⃣  Voir Transactions")
+        print("4️⃣  Miner un Block")
+        print("5️⃣  Compresser avec Block")
+        print("6️⃣  Décompresser et Vérifier")
+        print("7️⃣  Quitter")
+        print("===================================")
+        choice = input("👉 Choisissez une option: ")
+        if choice == "1":
+            try:
+                amount = float(input("Quantité de crypto: "))
+                price = float(input("Prix unitaire (€): "))
+                buy_crypto(amount, price)
+            except ValueError:
+                print("❌ Entrée invalide. Veuillez saisir un nombre valide.")
+        elif choice == "2":
+            sell_crypto()
+        elif choice == "3":
+            show_transactions()
+        elif choice == "4":
+            data = input("Données du block: ")
+            mine_block({"data": data})
+        elif choice == "5":
+            zip_contract_with_block()
+        elif choice == "6":
+            unzip_and_verify_block()
+        elif choice == "7":
+            print("👋 Au revoir!")
+            break
+        else:
+            print("❌ Option invalide, veuillez réessayer.")
+
+if __name__ == "__main__":
+    main()
