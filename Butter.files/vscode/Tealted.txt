@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>PHP</h1>
+    <p>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</p>
+    <p>PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+    <p>PHP is perfectly suited for Web development and can be embedded directly into the HTML code.</p>
+    <p>PHP is often used together with Apache (web server) on various operating systems.</p>
+    <p>PHP is easy to learn and runs efficiently on the server side.</p>
+    <p>PHP is open source software.</p>
+    <p>PHP is free to download and use.</p>
+    <p><a href="https://www.w3schools.com/php/default.asp">Learn more about PHP</a></p>
+</body>
+</html>
+```
+<server>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</server>
+```
+<Url.com>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</Url.com>
+```
+<https://www.w3schools.com/php/default.asp>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</https://www.w3schools.com/php/default.asp>
+```
+<https://www.w3schools.com/php/default.asp>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</https://www.w3schools.com/php/default.asp>
+```
+<https://www.w3schools.com/php/default.asp>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</https://www.w3schools.com/php/default.asp>
+```
+<https://www.w3schools.com/php/default.asp>
+    <id>php</id>
+    <name>PHP</name>
+    <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+    <url>https://www.w3schools.com/php/default.asp</url>
+    <tags>
+        <tag>PHP</tag>
+        <tag>Web</tag>
+        <tag>Scripting</tag>
+        <tag>Server</tag>
+    </tags>
+</https://www.w3schools.com/php/default.asp>
+```
+
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+
+```
+##
+```
+    
+    ```
+    <server>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </server>
+    ```
+    <Url.com>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </Url.com>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+    <https://www.w3schools.com/php/default.asp>
+        <id>php</id>
+        <name>PHP</name>
+        <description>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</description>
+        <url>https://www.w3schools.com/php/default.asp</url>
+        <tags>
+            <tag>PHP</tag>
+            <tag>Web</tag>
+            <tag>Scripting</tag>
+            <tag>Server</tag>
+        </tags>
+    </https://www.w3schools.com/php/default.asp>
+    ```
+</details>
+
+
+##
+###
+<details>
+    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+    <details>
+        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+        <details>
+            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+            <details>
+                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                <details>
+                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                    <details>
+                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                        <details>
+                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                            <details>
+                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                <details>
+                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                    <details>
+                                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                        <details>
+                                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                            <details>
+                                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                <details>
+                                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                    <details>
+                                                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                        <details>
+                                                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                            <details>
+                                                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                <details>
+                                                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                    <details>
+                                                                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                        <details>
+                                                                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                            <details>
+                                                                                <script>
+                                                                                    alert("Hello");
+
+                                                                                </script>
+                                                                            </details>
+                                                                        </details>
+                                                                    </details>
+                                                                </details>
+                                                            </details>
+                                                        </details>
+                                                        
+                                                    </details>
+                                                </details>
+                                            </details>
+                                        </details>
+                                    </details>
+                                </details>
+                            </details>
+                        </details>
+                    </details>
+                </details>
+            </details>
+        </details>
+    </details>
+</details>
+
+##
+###
+
+<details>
+    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+    <details>
+        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+        <details>
+            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+            <details>
+                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                <details>
+                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                    <details>
+                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                        <details>
+                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                            <details>
+                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                <details>
+                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                    <details>
+                                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                        <details>
+                                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                            <details>
+                                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                <details>
+                                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                    <details>
+                                                        <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                        <details>
+                                                            <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                            <details>
+                                                                <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                <details>
+                                                                    <summary>PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</summary>
+                                                                    <details>
+                                                                        <summary>
+                                                                            <script>
+                                                                                alert("Hello");
+
+                                                                            </script>
+                                                                        </summary>
+                                                                    </details>
+                                                                </details>
+                                                            </details>
+                                                        </details>
+                                                    </details>
+                                                </details>
+                                            </details>
+                                        </details>
+                                    </details>
+                                </details>
+                            </details>
+                        </details>
+                    </details>
+                </details>
+            </details>
+        </details>
+    </details>
+</details>
+
+##
+###
+2.1.3
+

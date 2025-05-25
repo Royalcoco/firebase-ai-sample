@@ -1,0 +1,222 @@
+npm install firebase
+  a0.import_window_opened.to. import ://BROWSER.Internet.To:teramo://httkPtHVyD5lLR4.cyberMonthDeal.approveCodes.fromEntries: @in_w.also i_friend_mail ]' °__html.reactjs.to.give.jscontroller.deeplearn.@com
+    }
+
+------------------------------------
+
+// create a SharedArrayBuffer with a size in bytes
+const buffer = new SharedArrayBuffer(16);
+const uint8 = new Uint8Array(buffer);
+uint8[0] = 5;
+// Fonction pour extraire tout le texte visible sur la page
+function extractVisibleText() {
+    let textElements = [];
+    
+    // Parcourir tous les éléments visibles
+    document.querySelectorAll("*").forEach(element => {
+        if (element.innerText && element.offsetParent !== null) { // Vérifie si l'élément est visible
+            textElements.push(element.innerText.trim());
+        }
+    });
+
+    // Supprimer les doublons et retourner le texte consolidé
+    return [...new Set(textElements)].join("\n\n");
+}
+
+// Afficher le texte extrait dans la console
+console.log(extractVisibleText());
+
+// Fonction pour extraire tout le texte visible et leur code HTML d'origine
+function extractTextAndHTML() {
+    let elementsData = [];
+    
+    // Parcourir tous les éléments visibles
+    document.querySelectorAll("*").forEach(element => {
+        if (element.innerText && element.offsetParent !== null) { // Vérifie si l'élément est visible
+            elementsData.push({
+                text: element.innerText.trim(),
+                html: element.outerHTML.trim()
+            });
+        }
+    });
+
+    // Supprimer les doublons basés sur le texte
+    let uniqueElements = Array.from(new Map(elementsData.map(item => [item.text, item])).values());
+
+    // Retourner les données consolidées
+    return uniqueElements;
+}
+
+// Afficher les données extraites dans la console
+console.log(extractTextAndHTML());
+
+
+Atomics.compareExchange(uint8, 0, 5, 2); // returns 5
+console.log(Atomics.load(uint8, 0));
+// expected output: 2
+
+Atomics.compareExchange(uint8, 0, 5, 4); // returns 2
+console.log(Atomics.load(uint8, 0));
+// expected output: 2
+
+pip install beautifulsoup4
+
+from bs4 import BeautifulSoup
+
+def extract_text_and_html(html_content):
+    soup = BeautifulSoup(html_content, "html.parser")
+    elements_data = []
+
+    for element in soup.find_all(True):  # Parcourir tous les éléments HTML
+        if element.string and element.string.strip():  # Vérifie si l'élément contient du texte
+            elements_data.append({
+                "text": element.string.strip(),
+                "html": str(element).strip()
+            })
+
+    # Supprimer les doublons basés sur le texte
+    unique_elements = {item["text"]: item for item in elements_data}.values()
+
+    return list(unique_elements)
+
+# Exemple d'utilisation
+if __name__ == "__main__":
+    # Charger un fichier HTML ou une page Web
+    with open("page.html", "r", encoding="utf-8") as file:
+        html_content = file.read()
+    
+    extracted_data = extract_text_and_html(html_content)
+
+    # Afficher les résultats
+    for item in extracted_data:
+        print(f"Texte : {item['text']}\nHTML : {item['html']}\n{'-'*50}")
+
+-----------------------------------------------
+
+// create a SharedArrayBuffer with a size in bytes
+const buffer = new SharedArrayBuffer(16);
+const uint8 = new Uint8Array(buffer);
+uint8[0] = 5;
+
+Atomics.compareExchange(uint8, 0, 5, 2); // returns 5
+console.log(Atomics.load(uint8, 0));
+// expected output: 2
+
+Atomics.compareExchange(uint8, 0, 5, 4); // returns 2
+console.log(Atomics.load(uint8, 0));
+// expected output: 2
+
+// Create a SharedArrayBuffer with a size of 16 bytes
+const buffer = new SharedArrayBuffer(16);
+
+// Create a Uint8Array view of the buffer
+const uint8 = new Uint8Array(buffer);
+
+// Set the first element of the array to 5
+uint8[0] = 5;
+
+// Atomically compare the value at index 0 with 5
+// If it matches, replace it with 2
+const result1 = Atomics.compareExchange(uint8, 0, 5, 2);
+
+// Log the value returned by compareExchange (the original value)
+console.log(result1); // Output: 5, because 5 was the original value at index 0
+
+// Log the current value at index 0 after the operation
+console.log(Atomics.load(uint8, 0)); // Output: 2, because the value was updated to 2
+
+// Attempt another compareExchange at index 0
+// It compares the current value (2) with 5
+// Since they do not match, no update is performed
+const result2 = Atomics.compareExchange(uint8, 0, 5, 4);
+
+// Log the value returned by compareExchange (the original value)
+console.log(result2); // Output: 2, because the current value at index 0 was 2
+
+// Log the current value at index 0 to confirm no changes occurred
+console.log(Atomics.load(uint8, 0)); // Output: 2, because no update was made
+
+--------------------------------------------------
+
+    'contentWindow.Robert.close.to.createElement.fromCharCode.mspin_googcolor_small.@//:devtools./protocol.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.gzip.CompressionStream of AIzaSyCbsbvGCe7C9mCtdaTycZB2eUFuzsYKG_E in ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    
+}
+
+------------------------------------------------
+
+'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.TEXTAREA.TextDecoder.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.toElement.TESTCOOKIESENABLED.;is_rtl://HTMLElement/subarray.]' [abort.utf-08]
+window/:htmlFor/do {
+    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.in
+} while (text)
+
+----------------------------------------------------
+
+[ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.jsmode//html_file_path.@charCodeAt.coaxial/absolute]
+}
+-----------------------------------------------------
+
+
+{sub.ListSelect:after,.ListSelect:before,.view-regiment-list [data-drupal-selector=edit-region]:after,.view-regiment-list [data-drupal-selector=edit-region]:before,.view-regiment-list [data-drupal-selector=edit-weapon-type]:after,.view-regiment-list [data-drupal-selector=edit-weapon-type]:before-top: ( X² */2\(root-square.;crimson,hgroup['s'[import:-exploite@charset]"e"]'h'))%
+
+---------------------------------------------------
+
+    contentWindow./documentUri/startPath.with:/$httpHeaders.$goog_Thenable.com@NE.CE.tab[MessageChannel.@features.frameBorder.srcElement.frameType/IFRAME. ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.setRequestHeader.token.available.toLocaleString.host/C::/http.found/.:/CriOS/@net.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789]
+
+----------------------------------------------------------
+
+
+from .this._hd = this._hd || 'conf_sl.(iflsig/:htb/:/[-['{resetAnswerEltVisibility};
+
+------------------------------------------------------------
+
+c:://defined-_url.-(inline.fa-li.://document.(,?.//:indeterminate.fa-file-import.button.target-five-entries_picto.fa-american-sign-language-interpreting.fr-richtext-image__richtext--half/half._@charset))
+
+---------------------------------------------------------------
+
+Windows'path: (//*-$_ ")."_blank.securitypolicyviolation.HTMLElement.CriOS/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.com@iPhone.microsoft:XDomainRequest.htmlFor Authorization/serif'ponctuation ($-)
+
+-------------------------------------------------------------------
+
+$httpHeaders//Google-Inc.multiselectable./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.import {AIzaSyCbsbvGCe7C9mCtdaTycZB2eUFuzsYKG_E.delete.miss} from "AIzaSyCbsbvGCe7C9mCtdaTycZB2eUFuzsYKG_E"
+dismiss : MACIos:/HTMLElement/for (let mo = 0; mo < window; mo++) {
+    miss : MACIos:http//:block.XDomainRequest.requestAnimationFrame.to _startuploaded.TEXTAREA./MACIos.;
+}
+
+----------------------------------------------------------------
+
+('"compatMode.code.commandId./command/getAllResponseHeaders.toElement:// https://www.extendoffice.com/order/kutools-for-excel.html.FORM //: ');._startuploaded.;.:// C:\Utilisateurs\Win10x64Test\Documents\test\info\instruction1.txt"'). C# :color.___jsl.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.TextDecoder.fromCharCode.Element.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.
+
+-----------------------------------------------------------------
+
+} while (Hôte : www.example.com
+User-Agent : Mozilla/5.0 (Linux ; Android 10 ; Pixel 3 XL) AppleWebKit/537.36 (KHTML, comme Gecko) Chrome/91.0.4472.77 Mobile Safari/537.36
+Accept : text/html,application/xhtml xml,application/xml;q=0.9,image/webp,*/*;q=0.8).
+GET /api/users?id=123 HTTP/1.1.//hasStorageAccess '):/in/('this.gbar_);$httpHeaders//.Google-Inc.XDomainRequest./https://www.extendoffice.com/order/kutools-for-excel.html.@challenge.@charCode.IF.AbortController
+
+---------------------------------------------------------------
+
+
+    }
+}
+)(this.gbar_); ['"CompressionStream.documentElement.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.in_zip@dark. :Px.% "']
+[ "'CompressionStream.of./HTMLElement.createDocumentFragment.fromCharCode.token.CompressionStream on /:/|-\,.://_blank'"]
+>>>/javascript///:/|-\,.://www-Google_Inc.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./File/document/urlencoded/for (let mp3.ml of loccter) {
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAdLy8Bgw3xzy_2ny9fJCg--GLZhBfd-H4",
+  authDomain: "sample-firebase-ai-app-c6c59.firebaseapp.com",
+  projectId: "sample-firebase-ai-app-c6c59",
+  storageBucket: "sample-firebase-ai-app-c6c59.firebasestorage.app",
+  messagingSenderId: "325618577120",
+  appId: "1:325618577120:web:a7ae29d768622ba4f76a85"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+npm install -g firebase-tools
+firebase login

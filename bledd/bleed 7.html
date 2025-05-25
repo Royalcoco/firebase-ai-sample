@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Decentralized Crypto Exchange</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Secure Decentralized Crypto Exchange</h1>
+        <p>Protect your transactions with advanced security measures</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Authorize Wallet</h2>
+            <p>Enter your wallet private key to authorize secure transactions.</p>
+            <input type="text" id="privateKey" placeholder="Enter Private Key" />
+            <button id="authorizeWallet" class="btn">Authorize Wallet</button>
+        </div>
+        <div class="card">
+            <h2>Exchange Cryptocurrencies</h2>
+            <p>Exchange cryptocurrencies securely. Only authorized wallets can transact.</p>
+            <button id="startTransaction" class="btn">Start Transaction</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulated Firewall: Validate Wallet Private Key
+        const authorizedKeys = ["samplePrivateKey123", "userSpecificPrivateKey456"]; // Replace with secure storage
+        
+        let isAuthorized = false;
+
+        document.getElementById("authorizeWallet").addEventListener("click", () => {
+            const inputKey = document.getElementById("privateKey").value;
+            if (authorizedKeys.includes(inputKey)) {
+                isAuthorized = true;
+                alert("Wallet authorized successfully!");
+            } else {
+                alert("Invalid private key. Access denied.");
+                isAuthorized = false;
+            }
+        });
+
+        document.getElementById("startTransaction").addEventListener("click", () => {
+            if (!isAuthorized) {
+                alert("Unauthorized access. Please authorize your wallet first.");
+                return;
+            }
+
+            // Simulated transaction process
+            const transaction = {
+                wallet: "DecentralizedWalletAddress123",
+                amount: 0.5,
+                currency: "BTC",
+                timestamp: new Date().toISOString(),
+            };
+
+            console.log("Processing Transaction:", transaction);
+            alert("Transaction started successfully!");
+        });
+    </script>
+</body>
+</html>

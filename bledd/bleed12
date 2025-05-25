@@ -1,0 +1,18 @@
+from bitcoinlib.wallet import *
+
+# Création d'un nouveau portefeuille
+wallet = Wallet()
+
+# Génération d'une nouvelle adresse
+address = wallet.get_new_address()
+print("Nouvelle adresse :", address)
+
+# Envoi de bitcoins (exemple)
+tx = wallet.create_transaction(
+    [(address, 0.1)],
+    "mon_clé_privée")  # Remplacer par votre clé privée
+
+# Diffusion de la transaction sur le réseau
+wallet.send_tx(tx)
+
+wallet.receive_tx(tx)

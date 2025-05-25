@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Crypto Exchange Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+        }
+        .card {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Decentralized Crypto Exchange</h1>
+        <p>Trade cryptocurrencies securely and effortlessly</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Create a Decentralized Wallet</h2>
+            <p>Generate a secure decentralized wallet for your transactions.</p>
+            <a href="#create-wallet" class="btn">Create Wallet</a>
+        </div>
+        <div class="card">
+            <h2>Exchange Cryptocurrencies</h2>
+            <p>Exchange cryptocurrencies without any fees. All transactions are secured and logged on the blockchain.</p>
+            <a href="#exchange-crypto" class="btn">Exchange Crypto</a>
+        </div>
+        <div class="card">
+            <h2>Link NFC Card</h2>
+            <p>Link your NFC-enabled card to your wallet. The card automatically calculates your available balance based on cryptocurrency transactions, converting it into fiat currency for spending.</p>
+            <a href="#link-nfc" class="btn">Link NFC Card</a>
+        </div>
+        <div class="card">
+            <h2>Subscription Plans</h2>
+            <p>Choose from a variety of subscription plans to manage your wallet balance and transaction limits. Each plan provides flexibility and tailored options for your spending needs.</p>
+            <a href="#view-plans" class="btn">View Plans</a>
+        </div>
+    </div>
+    <script>
+        const wallet = {
+            cryptoBalance: {
+                BTC: 0.5,
+                ETH: 2.0,
+                USDT: 1000
+            },
+            getFiatBalance(exchangeRates) {
+                return Object.entries(this.cryptoBalance)
+                    .reduce((total, [crypto, amount]) => total + (exchangeRates[crypto] || 0) * amount, 0);
+            },
+            processTransaction(crypto, amount, exchangeRates) {
+                if (this.cryptoBalance[crypto] && this.cryptoBalance[crypto] >= amount) {
+                    this.cryptoBalance[crypto] -= amount;
+                    const fiatValue = (exchangeRates[crypto] || 0) * amount;
+                    TransactionDatabase.recordTransaction(crypto, amount, fiatValue);
+                    Blockchain.recordBankLinks(crypto, amount, fiatValue);
+                    if (this.cryptoBalance[crypto] === 0) {
+                        console.log(`${crypto} balance is now zero.`);
+                    }
+                    console.log(`Processed transaction: ${amount} ${crypto} converted to $${fiatValue.toFixed(2)}`);
+                    return fiatValue;
+                } else {
+                    console.error('Insufficient balance or invalid cryptocurrency.');
+                    return 0;
+                }
+            }
+        };
+
+        const exchangeRates = {
+            BTC: 30000, // 1 BTC = $30,000
+            ETH: 2000,  // 1 ETH = $2,000
+            USDT: 1     // 1 USDT = $1
+        };
+
+        const TransactionDatabase = {
+            transactions: [],
+            recordTransaction(crypto, amount, fiatValue) {
+                const transaction = {
+                    id: this.transactions.length + 1,
+                    crypto,
+                    amount,
+                    fiatValue,
+                    timestamp: new Date().toISOString(),
+                    securityLevel: 'high'
+                };
+                this.transactions.push(transaction);
+                console.log("Transaction recorded:", transaction);
+            },
+            getTransactions() {
+                return this.transactions;
+            }
+        };
+
+        const Blockchain = {
+            bankLinks: [],
+            recordBankLinks(crypto, amount, fiatValue) {
+                const bankLink = {
+                    crypto,
+                    amount,
+                    fiatValue,
+                    walletFlow: "Wallet A -> Wallet B -> Bank",
+                    timestamp: new Date().toISOString()
+                };
+                this.bankLinks.push(bankLink);
+                console.log("Bank link recorded in blockchain:", bankLink);
+            },
+            getBankLinks() {
+                return this.bankLinks;
+            }
+        };
+
+        function handleCryptoExchange(crypto, amount) {
+            const fiatValue = wallet.processTransaction(crypto, amount, exchangeRates);
+            if (fiatValue > 0) {
+                console.log(`NFC card linked to decentralized bank. Transaction completed: $${fiatValue.toFixed(2)} available for spending.`);
+            }
+        }
+
+        // Example usage of the functionality
+        handleCryptoExchange('BTC', 0.1); // Example: Exchange 0.1 BTC
+        handleCryptoExchange('ETH', 1);   // Example: Exchange 1 ETH
+
+        console.log("Updated Wallet Balance:", wallet.cryptoBalance);
+        console.log("Wallet Fiat Balance:", wallet.getFiatBalance(exchangeRates));
+        console.log("All Transactions:", TransactionDatabase.getTransactions());
+        console.log("Bank Links Recorded in Blockchain:", Blockchain.getBankLinks());
+    </script>
+</body>
+</html>

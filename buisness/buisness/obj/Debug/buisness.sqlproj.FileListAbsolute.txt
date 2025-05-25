@@ -1,0 +1,12 @@
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\bin\Debug\buisness.dacpac
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\bin\Debug\buisness.deps.json
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\bin\Debug\buisness.dll
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\bin\Debug\buisness.pdb
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\buisness.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\buisness.sourcelink.json
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\Model.xml
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\refactor.xml
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\postdeploy.sql
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\predeploy.sql
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\buisness.dll
+c:\Users\salib\OneDrive\Bureau\buisness\buisness\obj\Debug\buisness.pdb

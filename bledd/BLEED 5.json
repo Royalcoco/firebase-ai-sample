@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "transactionId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+        },
+        "senderWallet": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]{34}$"
+        },
+        "receiverWallet": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]{34}$"
+        },
+        "amount": {
+            "type": "number",
+            "minimum": 0.0001
+        },
+        "currency": {
+            "type": "string",
+            "enum": ["BTC", "ETH", "USDT", "USD"]
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": ["transactionId", "senderWallet", "receiverWallet", "amount", "currency", "timestamp"]
+}
